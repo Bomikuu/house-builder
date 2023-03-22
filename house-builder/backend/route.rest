@@ -1,0 +1,18 @@
+GET http://localhost:5000/api/houses
+
+###
+
+POST http://localhost:5000/api/houses
+Content-Type: application/json
+
+{
+  "foundationType": "Wood",
+  "size": 20,
+  "floorCount": 5,
+  "roomSpecs": {
+    "bed": true
+  }
+}
+
+###
+GET http://localhost:5000/api/specifications
